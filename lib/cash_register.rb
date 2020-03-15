@@ -8,8 +8,8 @@ class CashRegister
     self.last_transaction_amount = 0
   end
 
-  def total=(value)
-    @total = value
+  def total=(price)
+    @total = price
   end
 
   def discount=(value)
