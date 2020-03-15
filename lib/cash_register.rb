@@ -33,13 +33,7 @@ class CashRegister
     self.last_transaction_amount = amount * quantity
   end
 
-  def apply_discount
-    if discount != 0
-      self.total = (total * ((100.0 - discount.to_f)/100)).to_i
-    else
-       "There is no discount to apply."
-    end
-  end
+  
 
   def items=(list)
     @items = list
